@@ -18,6 +18,10 @@ layout {
         start_suspended true
         cwd "./bin"
         name "Running (java)"  
+        x "10%"
+        y 2
+        height "90%"
+        width "80%"
       }
     }
   }
