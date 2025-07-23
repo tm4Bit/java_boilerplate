@@ -62,6 +62,10 @@ echo -e "${BOLD}[$(timestamp)]${NC} ${GREEN}  ${YELLOW}Build directory cleane
 
 echo -e "${BOLD}[$(timestamp)]${NC} ${GREEN}  ${YELLOW}Compiling Java source files from: ${BOLD_BLUE}$SRC_DIR${NC}"
 
+if [ -z "$(find "$SRC_DIR" -name "*.java")" ]; then
+    print_error "No Java source files found in '$SRC_DIR'."
+fi
+
 START_TIME_NANOS=$(date +%s%N) # Get current time in nanoseconds
 
 # -d "$BIN_DIR": specifies the destination directory for compiled classes.
