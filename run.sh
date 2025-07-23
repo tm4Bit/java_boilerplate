@@ -13,11 +13,11 @@
 
 # --- Configuration ---
 # Directory containing the Java(.java) source files.
-SRC_DIR="src"
+SRC_DIR="src/main/java"
 # Directory where compiled classes (.class) will be placed.
 BIN_DIR="bin"
 # Main class to be executed, which contains the main() method.
-MAIN_CLASS="application.Main"
+MAIN_CLASS="main.java.application.Main"
 
 # --- Color Definitions ---
 # Define colors for terminal output
