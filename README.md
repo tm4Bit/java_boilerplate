@@ -20,7 +20,7 @@ Before you begin, ensure you have the following software installed on your syste
 To create a new project from this template, simply run the following command in your terminal. It will download and execute the installation script, which sets up a clean project for you.
 
 ```sh
-curl -sSL [https://raw.githubusercontent.com/tm4Bit/java_boilerplate/master/install.sh](https://raw.githubusercontent.com/tm4Bit/java_boilerplate/master/install.sh) | bash
+curl -sSL https://raw.githubusercontent.com/tm4Bit/java_boilerplate/master/install.sh | bash
 ```
 
 The installer will:
@@ -73,21 +73,3 @@ The `run.sh` script is configurable via variables at the top of the file. If you
 MAIN_CLASS="main.java.application.Main" # <-- Change this value
 # ...
 ```
-
-## Class Design Templates
-
-Here are some basic templates you can follow for organizing your classes.
-
-#### Entity Class
-
-| Class              |
-| ------------------ |
-| — property: type   |
-| + method(): return |
-
-#### Service Class
-
-| Class              |
-| ------------------ |
-| — property: type   |
-| + method(): return |
