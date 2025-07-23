@@ -22,25 +22,25 @@ The workspace contains three folders by default, where:
 
 ### Class Template
 
-* E.g. entities 
+- E.g. entities
 
-|         Class              |
-|----------------------------|
-| — Property: type           |
-| — Property: type           |
-| + method(): return         |
-| + method(): reuturn        |
+| Class               |
+| ------------------- |
+| — Property: type    |
+| — Property: type    |
+| + method(): return  |
+| + method(): reuturn |
 
-* E.g. service
+- E.g. service
 
-|         Class              |
-|----------------------------|
-| — Property: type           |
-| — Property: type           |
-| + method(): return         |
-| + method(): reuturn        |
+| Class               |
+| ------------------- |
+| — Property: type    |
+| — Property: type    |
+| + method(): return  |
+| + method(): reuturn |
 
-## Command to run the application 
+## Command to run the application
 
 ```sh
 # First cd to the bin folder
