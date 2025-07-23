@@ -71,19 +71,19 @@ git clone --depth=1 "$REPO_URL" "$PROJECT_NAME" > /dev/null 2>&1
 cd "$PROJECT_NAME"
 echo -e "${BOLD_GREEN}Template cloned successfully!${NC}"
 
-print_header "2. Initializing New Repository"
+print_header "2. Cleaning Up"
+echo -e "${YELLOW}Removing install.sh...${NC}"
+rm -- "install.sh"
 echo -e "${YELLOW}Removing template's .git directory...${NC}"
 rm -rf .git
+echo -e "${BOLD_GREEN}Cleanup complete.${NC}"
+
+print_header "3. Initializing New Repository"
 echo -e "${GREEN}Initializing a fresh Git repository...${NC}"
 git init > /dev/null 2>&1
 git add . > /dev/null 2>&1
 git commit -m "Initial commit from java-kickstart template" > /dev/null 2>&1
 echo -e "${BOLD_GREEN}New Git repository created successfully.${NC}"
-
-print_header "3. Cleaning Up"
-echo -e "${YELLOW}Removing install.sh...${NC}"
-rm -- "install.sh"
-echo -e "${BOLD_GREEN}Cleanup complete.${NC}"
 
 print_header "🎉 Project '$PROJECT_NAME' is Ready! 🎉"
 echo -e "${BOLD}Your new Java project is set up and ready to go!${NC}"
