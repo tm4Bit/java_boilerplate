@@ -53,7 +53,8 @@ function print_error() {
 
 clear
 print_header "🚀 Java Kickstart Project Setup 🚀"
-read -p "$(echo -e ${BOLD}"Enter your new project name [default: $DEFAULT_PROJECT_NAME]: "${NC})" PROJECT_NAME
+echo -e -n "${BOLD}Enter your new project name [default: $DEFAULT_PROJECT_NAME]: ${NC}" > /dev/tty
+read PROJECT_NAME < /dev/tty
 PROJECT_NAME=${PROJECT_NAME:-$DEFAULT_PROJECT_NAME}
 
 if ! command -v git &> /dev/null; then
