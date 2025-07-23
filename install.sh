@@ -13,13 +13,13 @@
 # 6. Prints final instructions for the user.
 #
 # Usage:
-# curl -sSL https://raw.githubusercontent.com/tm4Bit/java-kickstart/master/install.sh | bash
+# curl -sSL https://raw.githubusercontent.com/tm4Bit/java_boilerplate/master/install.sh | bash
 #
 # Written by tm4Bit - 23.07.2025
 # =============================================================================
 
 # --- Configuration ---
-REPO_URL="https://github.com/tm4bit/java-kickstart.git"
+REPO_URL="https://github.com/tm4Bit/java_boilerplate.git"
 DEFAULT_PROJECT_NAME="java-kickstart"
 
 # --- Color Definitions ---
